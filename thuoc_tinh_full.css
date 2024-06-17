@@ -1,0 +1,5 @@
+/* Ẩn thanh cuộn phía dưới của trang web */
+body {
+    overflow-y:auto; /* Ngăn chặn cuộn dọc */
+    overflow-x:hidden; /* Ngăn chặn cuộn dọc */
+    }

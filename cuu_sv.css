@@ -1,0 +1,92 @@
+/* Phần cứu sinh viên */
+.cuu_sinh_vien {
+    font-family: Arial, sans-serif; /* Font chữ */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    background-color: #f4f4f4; /* Màu nền */
+    color: #333; /* Màu chữ */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 6500px; /* Vị trí từ trên xuống */
+    left: 0px; /* Vị trí từ trái sang */
+    user-select: none; /* Ngăn người dùng chọn văn bản */
+}
+
+.cuu_sv{
+    position:absolute;
+    top: 6280px;
+    left: 655px;
+}
+
+h5 {
+    font-size: 50px; /* Kích thước chữ */
+    font-family: Arial, sans-serif; /* Font chữ */
+}
+
+.cuu_sv strong{
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    color: orange;
+}
+.containera {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 630px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.slide:hover {
+    width: 630px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: orange;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.slide:hover p{
+    color:#ddd;
+    font-weight: 700;
+}
+
+.slide:hover h6{
+    color:#ddd;
+}
+
+h6 {
+    margin-left: 120px;
+    position:absolute;
+    top: 0px;
+    color: orange;
+    font-size: 20px;
+}
+
+.slide img {
+    width: 100px; /* Chiều rộng */
+    height: 100px; /* Chiều cao */
+    border-radius: 50%; /* Bo tròn */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+.slide p{
+    line-height: 25px;
+}

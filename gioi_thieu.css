@@ -1,0 +1,48 @@
+.giới_thiệu{
+    position: absolute; /*chỉnh vị trí*/
+    top: 1190px;  /*chỉnh vị trí trên*/
+    left: 20px;  /*chỉnh vị trí phải*/
+    font-size: 22px;
+}
+
+.img_1{
+    position: absolute; /*chỉnh vị trí*/
+    top: 1170px;  /*chỉnh vị trí trên*/
+    left: 990px;  /*chỉnh vị trí phải*/
+}
+
+.img_2{
+    position: absolute; /*chỉnh vị trí*/
+    top: 1650px;  /*chỉnh vị trí trên*/
+    left: 20px;  /*chỉnh vị trí phải*/
+}
+
+   /* CSS cho hiệu ứng kéo hiện lên */
+   .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img_1 img {
+    opacity: 0; /* Ẩn ảnh ban đầu */
+    transition: opacity 0.5s ease; /* Tạo hiệu ứng chuyển đổi */
+}
+
+.img_1 img.show {
+    opacity: 1; /* Hiển thị ảnh khi đã cuộn đến vị trí mong muốn */
+}
+
+.img_2 img {
+    opacity: 0; /* Ẩn ảnh ban đầu */
+    transition: opacity 0.5s ease; /* Tạo hiệu ứng chuyển đổi */
+}
+
+.img_2 img.show {
+    opacity: 1; /* Hiển thị ảnh khi đã cuộn đến vị trí mong muốn */
+}

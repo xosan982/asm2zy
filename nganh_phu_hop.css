@@ -1,0 +1,43 @@
+.img_3{
+    position: absolute; /*chỉnh vị trí*/
+    top: 3100px;  /*chỉnh vị trí trên*/
+}
+
+   /* Thiết lập cho box hình chữ nhật */
+   .rectangle-box {
+    position: absolute; /*chỉnh vị trí*/
+    top: 3300px;  /*chỉnh vị trí trên*/
+    left: 100px;
+    width: 500px;
+    height: 100px;
+    background-color: #fff; /* Màu nền trắng */
+    border: 2px solid orange; /* Viền cam */
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px auto; /* Canh giữa và khoảng cách bên ngoài */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng */
+    text-align: left; /* Canh giữa chữ */
+    font-family: Arial, sans-serif;
+}
+
+.rectangle-box p {
+    color: #000; /* Màu chữ đen */
+    font-size: 18px; /* Kích thước chữ */
+    margin-bottom: 20px; /* Khoảng cách giữa đoạn văn và liên kết */
+}
+
+.rectangle-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange; /* Màu nền cam */
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-weight: bold; /* In đậm chữ */
+    border-radius: 5px; /* Bo tròn góc */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu */
+}
+
+.rectangle-box a:hover {
+    background-color: #e69500; /* Màu nền cam đậm khi hover */
+}
+/* Thiết lập cơ bản cho toàn bộ trang */

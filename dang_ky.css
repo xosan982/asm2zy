@@ -1,0 +1,85 @@
+/* Phần đăng ký */
+.dang_ky {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 7300px; /* Vị trí từ trên xuống */
+    left: 540px; /* Vị trí từ trái sang */
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    width: 100%; /* Chiều rộng tối đa */
+    height: 540px; /* Chiều cao */
+}
+
+.registration-form {
+    background-color: #fff; /* Màu nền */
+    padding: 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+    width: 100%; /* Chiều rộng tối đa */
+    max-width: 500px; /* Chiều rộng tối đa */
+    box-sizing: border-box; /* Kích thước tính cả viền và padding */
+}
+
+.registration-form h2 {
+    text-align: center; /* Căn giữa */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+    color: #333; /* Màu chữ */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Khoảng cách dưới */
+}
+
+.form-group label {
+    display: block; /* Hiển thị dạng block */
+    margin-bottom: 5px; /* Khoảng cách dưới */
+    color: #555; /* Màu chữ */
+}
+
+.form-group input, .form-group select {
+    width: 100%; /* Chiều rộng tối đa */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ddd; /* Viền */
+    border-radius: 5px; /* Bo tròn */
+    box-sizing: border-box; /* Kích thước tính cả viền và padding */
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #ff9100; /* Màu viền khi focus */
+    outline: none; /* Loại bỏ đường viền khi focus */
+}
+
+.submit-btn {
+    width: 100%; /* Chiều rộng tối đa */
+    padding: 15px; /* Khoảng cách bên trong */
+    background-color: #ff9100; /* Màu nền */
+    border: none; /* Không có viền */
+    border-radius: 5px; /* Bo tròn */
+    color: #fff; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ tay */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.submit-btn:hover {
+    background-color: #e07b00; /* Màu nền khi hover */
+}
+
+/* Phần tuyển sinh */
+.tuyen_sinh {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 7200px; /* Vị trí từ trên xuống */
+    left: 1250px; /* Vị trí từ trái sang */
+}
+
+h8 {
+    color: white; /* Màu chữ */
+    font-size: 50px; /* Kích thước chữ */
+    font-family: Arial, sans-serif; /* Font chữ */
+    font-weight: 600;
+}
+
+.img_6 {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 7150px; /* Vị trí từ trên xuống */
+    left: 00px; /* Vị trí từ trái sang */
+}

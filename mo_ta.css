@@ -1,0 +1,44 @@
+
+.img_4{
+    position:absolute;
+    top: 5000px;
+    left: -0px;
+}
+.img_5{
+    position:absolute;
+    top: 5570px;
+    left: 950px;
+}
+.trai_nghiem{
+    position:absolute;
+    top: 5000px;
+    left: 1000px;
+}
+.trai_nghiem strong{
+    color: orange
+}
+h5{
+    font-size: 40px;
+}
+.trai_nghiem p{
+    font-size: 22px;
+}
+.trai_nghiem a{
+    font-size: 20px;
+    color: orange
+}
+.hanh_trinh{
+    position:absolute;
+    top: 5570px;
+    left: 50px;
+}
+.hanh_trinh p{
+    font-size: 22px;
+}
+.hanh_trinh a{
+    font-size: 20px;
+    color: orange
+}
+.hanh_trinh strong{
+    color: orange
+}

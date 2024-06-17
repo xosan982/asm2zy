@@ -1,0 +1,75 @@
+/* CSS cho phần cuối trang */
+.trang_cuoi {
+    font-family: Arial, sans-serif; /* Sử dụng font chữ Arial hoặc font mặc định của hệ thống */
+    line-height: 1.6; /* Độ dài dòng chữ */
+    margin: 0; /* Loại bỏ margin */
+    padding: 0; /* Loại bỏ padding */
+    background-color: #f9f9f9; /* Màu nền */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 7950px; /* Vị trí từ đầu trang */
+    left: 0; /* Vị trí từ bên trái */
+}
+
+/* Phần chân trang */
+footer {
+    background-color: hsl(27, 93%, 61%); /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 30px 0; /* Khoảng cách padding trên và dưới */
+    text-align: center; /* Căn giữa nội dung */
+    display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+    justify-content: space-between; /* Căn đều các phần tử */
+    flex-wrap: wrap; /* Cho phép các phần tử chồng lên nhau khi không đủ chỗ */
+}
+
+/* Mỗi phần trong chân trang */
+footer .section {
+    flex-grow: 1; /* Phần tử phát triển để lấp đầy không gian trống */
+    margin: 0 20px; /* Khoảng cách giữa các phần */
+    max-width: 30%; /* Chiều rộng tối đa của mỗi phần */
+    min-width: 250px; /* Chiều rộng tối thiểu của mỗi phần */
+}
+
+/* Đoạn văn trong phần chân trang */
+footer p {
+    margin: 10px 0; /* Khoảng cách giữa các đoạn văn */
+}
+
+/* Liên kết trong phần chân trang */
+footer a {
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    margin: 0 20px; /* Khoảng cách giữa các liên kết */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng khi di chuột qua liên kết */
+footer a:hover {
+    color: #ffd700; /* Màu vàng khi hover */
+}
+
+/* Các liên kết mạng xã hội */
+.social-links a {
+    display: inline-block; /* Hiển thị các liên kết theo hàng ngang */
+    width: 40px; /* Chiều rộng của liên kết */
+    height: 40px; /* Chiều cao của liên kết */
+    line-height: 40px; /* Chiều cao của dòng chữ */
+    border-radius: 50%; /* Bo tròn góc */
+    background-color: #fff; /* Màu nền */
+    color: #333; /* Màu chữ */
+    font-size: 18px; /* Kích thước chữ */
+    margin: 0 10px; /* Khoảng cách giữa các liên kết */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/* Hiệu ứng khi di chuột qua liên kết mạng xã hội */
+.social-links a:hover {
+    background-color: #ffc400; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+/* Hình ảnh */
+.img_7 {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 8190px; /* Vị trí từ trên xuống */
+    left: 0px; /* Vị trí từ trái sang */
+}

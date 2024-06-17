@@ -1,0 +1,51 @@
+.cau_hoi {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 1770px;
+    left: 800px;
+    border-radius: 10px;
+}
+.container_a {
+    width: 700px;
+    height: 260px;
+    overflow-y: scroll;
+    background-color: #ff9900;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 123, 0, 0.1);
+}
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 750;
+}
+.answer {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.cau_hoi_thuong_gap{
+    position:absolute;
+    top: 1700px;
+    left: 850px;
+}
+
+h7{
+    font-size: 35px; /* Kích thước chữ */
+    font-family: Arial, sans-serif; /* Font chữ */
+    font-weight: 750;
+    color:#f9f9f9;
+}

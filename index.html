@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="gioi_thieu.css">
+    <link rel="stylesheet" href="nganh.css">
+    <link rel="stylesheet" href="nganh_phu_hop.css">
+    <link rel="stylesheet" href="tin_tuc.css">
+    <link rel="stylesheet" href="mo_ta.css">
+    <link rel="stylesheet" href="cuu_sv.css">
+    <link rel="stylesheet" href="dang_ky.css">
+    <link rel="stylesheet" href="thuoc_tinh_full.css">
+    <link rel="stylesheet" href="trang_cuoi.css">
+    <link rel="stylesheet" href="cau_hoi.css">
+    <title>ĐẠI HỌC FPT HỒ CHÍ MINH</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="content1">
+    <div class="content">
+        <div class="menu"></div>
+
+<img src="sv4.png" alt="Mô tả ảnh"  width="100%" height="100%">
+
+<div class="img">
+    <img src="logo1.webp" alt="Mô tả ảnh"  width="200px" height="auto">
+</div>
+
+<div class="đăng_nhập">
+        <ul>
+            <li><a href="#">ĐĂNG NHẬP</a></li>
+        </ul>
+    </div>
+
+ <div class="search-container">
+        <form action="/search" method="GET" style="position: relative;">
+            <input type="text" name="query" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-button"><img src="kinh_lup.png" alt=""  width="20px" height="auto"></button> <!-- Biểu tượng kính lúp -->
+        </form>
+    </div>
+
+    <nav class="vmenu">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">CHƯƠNG TRÌNH</a></li>
+            <li><a href="#">TUYỂN SINH</a></li>
+            <li><a href="#">TIN TỨC - SỰ KIỆN</a></li>
+            <li><a href="#">LIÊN HỆ - HỖ TRỢ</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+    <nav class="hmenu">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">CHƯƠNG TRÌNH</a></li>
+            <li><a href="#">TUYỂN SINH</a></li>
+            <li><a href="#">TIN TỨC - SỰ KIỆN</a></li>
+            <li><a href="#">LIÊN HỆ - HỖ TRỢ</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // script.js
+document.addEventListener('scroll', function() {
+    const menu = document.querySelector('.hmenu');
+    if (window.scrollY > 50) { // Nếu cuộn xuống quá 50px
+        menu.style.display = 'flex'; // Hiển thị menu
+    } else {
+        menu.style.display = 'none'; // Ẩn menu
+    }
+});
+    </script>
+
+<button class="btn-dang-ky">Đăng Ký Ngay</button>
+
+<div class="img_1">
+    <img src="truong1.png" alt="Mô tả ảnh"  width="600px" height="auto">
+</div>
+
+<h1 class="hidden">GIỚI THIỆU</h1>
+<p class="giới_thiệu hidden">
+    Đại học FPT cơ sở TP. Hồ Chí Minh là một trong những cơ sở giáo dục hàng đầu thuộc Tập đoàn FPT, <br>
+    một trong những tập đoàn công nghệ lớn nhất Việt Nam. Trường được thành lập với sứ mệnh đào tạo <br>
+    nguồn nhân lực chất lượng cao, đáp ứng yêu cầu ngày càng khắt khe của thị trường lao động quốc tế.
+<br><br>
+Tại cơ sở TP. Hồ Chí Minh, sinh viên được học tập trong một môi trường hiện đại, trang bị đầy đủ cơ sở <br>
+vật chất tiên tiến, và được giảng dạy bởi đội ngũ giảng viên giàu kinh nghiệm, có chuyên môn cao. Chương <br>
+trình đào tạo tại Đại học FPT không chỉ chú trọng đến kiến thức chuyên môn mà còn đặc biệt quan tâm đến <br>
+việc phát triển kỹ năng mềm và khả năng ngoại ngữ của sinh viên, giúp họ tự tin và sẵn sàng tham gia vào <br>
+thị trường lao động toàn cầu.
+<br><br>
+Ngoài ra, Đại học FPT TP. Hồ Chí Minh còn nổi bật với các hoạt động ngoại khóa sôi nổi, đa dạng các câu <br>
+lạc bộ và dịch vụ hỗ trợ sinh viên, tạo điều kiện để sinh viên phát triển toàn diện cả về trí tuệ và thể chất.
+</p>
+
+<!-- JavaScript để tạo hiệu ứng kéo hiện lên -->
+<script>
+    // Chờ cho trang HTML được tải hoàn toàn trước khi thực thi đoạn mã
+    document.addEventListener('DOMContentLoaded', function() {
+        // Lấy phần tử chứa phần giới thiệu và tiêu đề
+        const introductionSection = document.querySelector('.giới_thiệu');
+        const title = document.querySelector('h1');
+
+        // Hàm kiểm tra vị trí khi cuộn trang
+        function checkScroll() {
+            // Lấy vị trí của phần giới thiệu trong viewport
+            const sectionPosition = introductionSection.getBoundingClientRect().top;
+            // Tính vị trí của màn hình chiếu
+            const screenPosition = window.innerHeight / 1.3;
+
+            // Kiểm tra xem phần giới thiệu đã hiện ra trên màn hình hay chưa
+            if (sectionPosition < screenPosition) {
+                // Nếu đã hiện ra, thêm lớp 'show' để hiển thị nội dung
+                introductionSection.classList.add('show');
+                // Hiển thị tiêu đề
+                title.classList.add('show');
+            }
+        }
+
+        // Lắng nghe sự kiện cuộn trang
+        window.addEventListener('scroll', checkScroll);
+        // Kiểm tra vị trí ngay khi tải trang
+        checkScroll();
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const image = document.querySelector('.img_1 img');
+
+        function checkScroll() {
+            const imagePosition = image.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (imagePosition < screenPosition) {
+                image.classList.add('show');
+            }
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const image = document.querySelector('.img_2 img');
+
+        function checkScroll() {
+            const imagePosition = image.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (imagePosition < screenPosition) {
+                image.classList.add('show');
+            }
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+    });
+</script>
+
+<div class="img_2">
+    <img src="banner8.png" alt="Mô tả ảnh"  width="1580px" height="auto">
+</div>
+
+<div class="cau_hoi_thuong_gap">
+    <h7>CÂU HỎI THƯỜNG GẶP</h7>
+</div>
+
+<div class="cau_hoi">
+    <div class="container_a">
+        <div class="question">
+            <p>Ngoài học phí thì có phát sinh chi phí gì không?</p>
+            <div class="answer">
+                Đại học FPT công bố chi tiết học phí tại trang Học phí. Học phí này không phát sinh chi phí trong suốt quá trình học. Sinh viên được miễn phí toàn bộ giáo trình trong suốt 4 năm học.
+            </div>
+        </div>
+        <div class="question">
+            <p>Trường có chính sách học bổng không? Nếu muốn có học bổng thì cần đáp ứng điều kiện gì?</p>
+            <div class="answer">
+                Hàng năm, Đại học FPT dành hàng trăm suất học bổng đầu vào từ 10% - 100% học phí. Học bổng này được cấp cho toàn khóa học của sinh viên. Điều kiện để tham gia xét cấp học bổng yêu cầu thí sinh cần có các thành tích từ cấp Quốc Gia trở lên hoặc tham gia thi xét cấp học bổng thường vào tháng 5 hàng năm. Chi tiết xem tại trang Học bổng.
+            </div>
+        </div>
+        <div class="question">
+            <p>Cấu trúc bài thi học bổng Đại học FPT như thế nào?</p>
+            <div class="answer">
+                Tham gia kỳ thi này, thí sinh cần vượt qua 2 bài kiểm tra năng lực gồm bài kiểm tra Toán logic trắc nghiệm và Văn nghị luận xã hội. Đề thi của Đại học FPT được đánh giá cao về chất lượng, khả năng sàng lọc thí sinh.<br><br>
+                – Bài kiểm tra Toán logic hình thức trắc nghiệm nhằm đánh giá năng lực phổ thông nền tảng và năng lực chuyên biệt có liên quan đến ngành học thí sinh đăng ký dự thi. Các câu hỏi trong bài được xây dựng theo dạng đề GMAT, GRE và LSAT của Mỹ. Cấu trúc bài kiểm tra toán logic trắc nghiệm gồm 3 phần: Kỹ năng tính toán, Kỹ năng xử lý tính đầy đủ của thông tin để giải quyết bài toán, Lập luận logic. Tổng cộng có 90 câu trắc nghiệm làm trong 120 phút. Đề thi không chỉ kiểm tra năng lực của thí sinh mà còn là cơ hội kiểm tra độ phù hợp với ngành nghề. Do vậy, các câu hỏi của từng đề thi về ngành Công nghệ thông tin, ngành Quản trị kinh doanh, và khối ngành Ngôn ngữ sẽ có mức độ và kiến thức khác nhau. Riêng chuyên ngành Thiết kế mỹ thuật số (thuộc ngành CNTT) thí sinh có thêm bài thi năng khiếu mỹ thuật.<br><br>
+                – Bài kiểm tra thứ 2 là Văn nghị luận xã hội làm trong 60 phút. Bài kiểm tra này nhằm đánh giá năng lực nghị luận của thí sinh thông qua một bài luận có chủ đề thông dụng và gần gũi với thí sinh. Nhiều đề thi viết luận của Đại học FPT đã thu hút được sự quan tâm của xã hội khi đưa ra những vấn đề thời sự, thực tế, tạo hứng thú cho thí sinh.
+            </div>
+        </div>
+        <div class="question">
+            <p>Khi nào thì tôi có thể nộp hồ sơ vào trường? Và hồ sơ bao gồm những gì?</p>
+            <div class="answer">
+                Mỗi năm, vào khoảng tháng 2, Đại học FPT sẽ bắt đầu nhận đăng ký của thí sinh qua cổng đăng ký online: <a href="http://dangky.fpt.edu.vn/dang-ky">http://dangky.fpt.edu.vn/dang-ky</a>. Thí sinh cần chuẩn bị các tập tin hình ảnh: Hai mặt của Chứng minh nhân dân/Căn cước công dân; Học bạ các năm học THPT (tính tới thời điểm nộp hồ sơ); Chứng nhận các thành tích (nếu có). Ngay từ bây giờ, thí sinh quan tâm đến các thông tin tuyển sinh của Đại học FPT, vui lòng liên hệ hotline (0236) 7300999.
+            </div>
+        </div>
+        <div class="question">
+            <p>Tôi đã học ở một trường đại học khác, tôi có thể chuyển sang Đại học FPT để học tiếp không?</p>
+            <div class="answer">
+                Hiện nay, Đại học FPT tiếp nhận sinh viên chuyển trường từ các trường Đại học khác. Tuy nhiên, sinh viên phải đến từ các trường thuộc TOP 1000 trong 3 bảng xếp hạng gần nhất: QS, ARWU & THE hoặc các trường đạt chứng nhận QS Stars 5* về chất lượng đào tạo.
+            </div>
+        </div>
+        <div class="question">
+            <p>Tôi tốt nghiệp THPT ở nước ngoài, nếu về Việt Nam tôi có được đăng ký vào học tại Đại học FPT không?</p>
+            <div class="answer">
+                Trường hợp thí sinh là đối tượng đã tốt nghiệp THPT ở nước ngoài khi về Việt Nam để đăng ký vào Đại học FPT bạn cần chứng nhận của Sở GD-ĐT về việc công nhận văn bằng. Chi tiết vui lòng liên hệ hotline (0236) 730 0999 để được hỗ trợ.
+            </div>
+        </div>
+        <div class="question">
+            <p>Chương trình học của Đại học FPT là giảng dạy bằng Tiếng Anh hay Tiếng Việt?</p>
+            <div class="answer">
+                Tại trường Đại học FPT, Tiếng Anh là ngôn ngữ chính được sử dụng trong học tập, thi cử và giảng dạy. Sinh viên được sử dụng miễn phí giáo trình hoàn toàn cầu, cung cấp bởi các nhà xuất bản danh tiếng trên thế giới.
+            </div>
+        </div>
+        <div class="question">
+            <p>Để trở thành sinh viên tại Đại học FPT tôi có cần đáp ứng yêu cầu chuẩn Tiếng Anh đầu vào nào không?</p>
+            <div class="answer">
+                Đối với chương trình đào tạo của Đại học FPT, nếu sinh viên đáp ứng được chuẩn IELTS 6.0 trở lên hoặc tương đương sẽ được miễn Tiếng Anh nền tảng năm đầu tiên để vào học chuyên ngành (rút ngắn thời gian học tập còn 3 năm). Đối với trường hợp sinh viên chưa đáp ứng được điều kiện Tiếng Anh như trên sẽ được đào tạo Tiếng Anh nền tảng, chuẩn bị đầy đủ kiến thức cho việc học chuyên ngành vào năm 2 (Số cấp độ tiếng Anh được dạy trong năm đầu tiên sẽ phụ thuộc vào trình độ của sinh viên sau khi thực hiện bài kiểm tra đầu năm).
+            </div>
+        </div>
+        <div class="question">
+            <p>Trình độ Anh văn chưa tốt hoặc không đạt IELTS 6.0 thì có đủ điều kiện học Đại học FPT không?</p>
+            <div class="answer">
+                Theo quy định của nhà trường nếu em có chứng chỉ tiếng Anh TOEFL iBT từ 80 hoặc IELTS (Học thuật) từ 6.0 hoặc quy đổi tương đương thì em sẽ được miễn học Anh văn dự bị. Nếu chưa đáp ứng được tiêu chuẩn này, em sẽ được tham dự kỳ thi kiểm tra năng lực tiếng Anh ban đầu và sẽ được xếp lớp theo mức độ phù hợp. Trường sẽ có 6 mức độ tiếng Anh. Hoàn thành xong mức cao nhất thì em đủ điều kiện vào chuyên ngành (tương ứng mức IELTS 6.0).
+            </div>
+        </div>
+        <div class="question">
+            <p>Nếu đã có người thân học tại Đại học FPT thì khi nhập học có được giảm học phí không?</p>
+            <div class="answer">
+                Ưu đãi 10% học phí toàn khóa học cho các học viên có anh/chị/em ruột đang theo học tại các chương trình đào tạo đại học tại Đại học FPT.
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+<script>
+    document.querySelectorAll('.question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.querySelector('.answer');
+            const displayStyle = window.getComputedStyle(answer).display;
+            answer.style.display = displayStyle === 'none' ? 'block' : 'none';
+        });
+    });
+</script>
+
+
+
+            <h2>Các ngành học tại <strong class="đại_học">Đại học FPT</strong></h2>
+
+        <!-- Các ô hình vuông -->
+        <div class="box" id="box1">
+            <a href="cong-nghe-thong-tin.html">
+                <p><strong>Công nghệ thông tin</strong><br><br><br>
+                    - Kỹ thuật Phần mềm<br><br>
+                    - An toàn Thông tin<br><br>
+                    - Trí tuệ Nhân tạo (AI)<br><br>
+                    - Thiết kế Mỹ thuật số<br><br>
+                    - Công nghệ Ô-tô số</p>
+            </a>
+        </div>
+
+        <div class="box" id="box2">
+            <a href="thiet-ke-truyen-thong.html">
+                <p><strong>Thiết kế - truyền thông</strong><br><br><br>
+                    - Truyền thông đa phương tiện<br><br>
+                    - Quan hệ công chúng (dự kiến)</p>
+            </a>
+        </div>
+
+        <div class="box" id="box3">
+            <a href="nganh-ngon-ngu.html">
+                <p><strong>Ngành ngôn ngữ</strong><br><br><br>
+                    - Ngôn ngữ Anh<br><br>
+                    - Song ngữ Nhật – Anh<br><br>
+                    - Song ngữ Hàn – Anh<br><br>
+                    - Song ngữ Trung – Anh</p>
+            </a>
+        </div>
+
+        <div class="box" id="box4">
+            <a href="quan-tri-kinh-doanh.html">
+                <p><strong>Quản trị kinh doanh</strong><br><br><br>
+                    - Digital Marketing<br><br>
+                    - Kinh doanh Quốc tế<br><br>
+                    - Tài chính<br><br>
+                    - Quản lý Logistics - Chuỗi cung ứng toàn cầu</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="img_3">
+        <img src="banner2.png" alt="Mô tả ảnh"  width="1880px" height="auto">
+    </div>
+
+    <h3>Bạn phù hợp với ngành nghề nào?</h3>
+
+    <div class="rectangle-box">
+        <p>Cùng Đại học FPT:<br>Khám phá tiềm năng - Sở thích nghề nghiệp - Ngành nghề phù hợp với Mật mã John Holland.</p>
+        <a href="#">Xem kết quả ngay!</a>
+    </div>
+
+  <div class="tin_tuc_moi">
+    <h4>TIN TỨC MỚI</h4>
+</div>
+
+<a href="#" class="read-more-btn">Xem thêm</a>
+
+    <div class="full">
+        <div class="news-container">
+            <!-- Phần trên của bảng tin -->
+            <div class="news-row">
+                <!-- Bản tin lớn bên trái -->
+                <div class="main-news">
+                    <a href="#">
+                        <img src="tin1.png" alt="Main News 1">
+                        <div class="title">Học từ trải nghiệm – Xu hướng giao lưu văn hoá toàn cầu của sinh viên đại học</div>
+                    </a>
+                </div>
+                <!-- Hai bản tin nhỏ bên phải -->
+                <div class="sub-news">
+                    <a href="#" class="sub-news-item">
+                        <img src="tin3.png" alt="Sub News 1">
+                        <div class="title"><p>Nữ sinh trường Phổ thông Dân tộc nội trú Điện Biên giành học bổng nhờ bài luận “không được phép gục ngã”</p></div>
+                    </a>
+                    <a href="#" class="sub-news-item">
+                        <img src="tin4.png" alt="Sub News 2">
+                        <div class="title"><p>2K6 Hà Nam đạt học bổng 100% Đại học FPT: Lựa chọn sớm sẽ giảm áp lực trước kỳ thi tốt nghiệp THPT</p></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Phần dưới của bảng tin -->
+            <div class="news-row">
+                <!-- Hai bản tin nhỏ bên trái -->
+                <div class="sub-news">
+                    <a href="#" class="sub-news-item">
+                        <img src="tin5.png" alt="Sub News 3">
+                        <div class="title"><p>Nam sinh giỏi Toán đặt mục tiêu làm việc tại Tập đoàn FPT</p></div>
+                    </a>
+                    <a href="#" class="sub-news-item">
+                        <img src="tin6.png" alt="Sub News 4">
+                        <div class="title"><p>Chân dung học bá Chuyên Phan Bội Châu chinh phục Học bổng Tài năng của trường F</p></div>
+                    </a>
+                </div>
+                <!-- Bản tin lớn bên phải -->
+                <div class="main-news">
+                    <a href="#">
+                        <img src="tin2.png" alt="Main News 2">
+                        <div class="title">Ngành công nghệ ô tô số tại trường ĐH FPT học gì? Cơ hội nghề nghiệp sau khi ra trường như thế nào?</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="img_4">
+            <img src="banner3.png" alt="Mô tả ảnh"  width="950px" height="">
+        </div>
+
+        <div class="img_5">
+            <img src="banner4.png" alt="Mô tả ảnh"  width="950px" height="">
+        </div>
+
+        <div class="trai_nghiem">
+            <h5>Trải nghiệm <strong>thành công</strong></h5>
+            <p>Sinh viên FPT là một công dân toàn cầu, tự do, tự tin để khác biệt. Không <br> chỉ thông thạo Anh Ngữ mà còn am hiểu bản sắc văn hóa dân tộc, là một <br> võ sinh Voninam rắn rỏi, khỏe mạnh hay tài tử âm nhạc dân tộc điệu nghệ.</p>
+            <a href="#">Cuộc sống sinh viên FPT<br>
+                Câu lạc bộ<br>
+                OJT</a>
+        </div>
+
+        <div class="hanh_trinh">
+            <h5>Đại học FPT và hành trình <br>cùng hơn <strong>35.000 sinh viên</strong></h5>
+            <p>Đại học FPT mang trong mình sứ mệnh tiên phong xây dựng hệ thống giáo dục <br> mang tính quốc tế, cung cấp năng lực cạnh tranh toàn cầu cho các thế hệ sinh <br> viên. Đại học FPT hướng tới việc đào tạo sinh viên 1 cách toàn diện. Không chỉ <br> cung cấp những kiến thức sát với thực tiễn, Đại học FPT còn trang bị những kỹ <br> năng mềm cần thiết cho sinh viên trên hành trình xây dựng sự nghiệp, kiến tạo <br> hạnh phúc và phát triển tương lai.
+                <br><br>
+                Bên cạnh đó, nhà trường đặc biệt chú trọng đến kỹ năng ngoại ngữ để giúp cho <br> sinh viên của Đại học FPT ra trường có thể tự tin làm việc và khẳng định giá trị <br> bản thân ở mọi quốc gia trên thế giới.
+            </p>
+            <a href="#">Chân dung sinh viên đại học FPT<br>
+                Khám phá campus Hồ Chí Minh
+                </a>
+        </div>
+
+        <div class="cuu_sv">
+            <h5>Cựu sinh viên <strong>thành công</strong></h5>
+        </div>
+
+        <div class="cuu_sinh_vien">
+            <div class="containera">
+                <div class="slider">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="cuu-sinh-vien1.jpg" alt="Profile 1">
+                        <h6>PHẠM HUY HOÀNG<br> <div class="nganh_hoc">Ngành học: Công nghệ thông tin</div></h6>
+                        <p>có thời gian làm việc tại FPT Software trước khi chuyển sang ASWIG Solutions với vị trí Developer ngôn ngữ C#. Sau đó,
+                            anh theo học Thạc sĩ ngành Computer Science tại Đại học Lancaster (Vương Quốc Anh). Trong thời gian học, anh làm công việc Full-Stack Developer tại phòng IT của trường.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="cuu-sinh-vien2.jpg" alt="Profile 1">
+                        <h6>TRẦN TRUNG HIẾU<br> <div class="nganh_hoc">Ngành học: Công nghệ thông tin</div></h6>
+                        <p>Hiếu tốt nghiệp ngành Công nghệ thông tin Đại học FPT. Ý tưởng thành lập TopCV khá tình cờ khi
+                            anh tìm nền tảng để thiết kế CV ứng tuyển vào Facebook nhưng không thấy một website nào đơn giản, dễ sử dụng và có thể tạo ra được CV chuyên nghiệp.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="cuu-sinh-vien3.jpg" alt="Profile 1">
+                        <h6>NGUYỄN THÀNH TRUNG<br> <div class="nganh_hoc">Ngành học: kỹ sư lập trình</div></h6>
+                        <p>Nguyễn Thành Trung tốt nghiệp Đại học FPT, chuyên ngành kỹ sư lập trình. Anh là đồng sáng lập và CEO của Sky Mavis, công ty sở hữu game blockchain
+                            đình đám Axie Infinity, gây sốt thế giới năm 2021. Trò chơi này tạo ra thế giới ảo mà người chơi có thể xây dựng, chăn nuôi, vừa có thể đưa các Axie chiến đấu và giành chiến thắng.</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="cuu-sinh-vien4.png" alt="Profile 1">
+                        <h6>NGUYỄN THẾ VINH<br> <div class="nganh_hoc">Ngành học: kỹ thuật phần mềm</div></h6>
+                        <p>Là đại diện duy nhất của Việt Nam được vinh danh trong lĩnh vực tài chính, Nguyễn Thế Vinh (29 tuổi) được biết đến là một trong những tên tuổi đáng chú ý của cộng đồng blockchain và tiền mã hóa. Anh là đồng sáng lập, kiêm Giám đốc điều hành VIC Group – cộng đồng nghiên cứu và đầu tư tiền điện tử lớn nhất Việt Nam năm 2017.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="cuu-sinh-vien5.jpeg" alt="Profile 1">
+                        <h6>NGUYỄN THỊ MAI ANH<br> <div class="nganh_hoc">Ngành học: quản trị kinh doanh</div></h6>
+                        <p>Cầm tấm bằng giỏi cùng loạt thành tích xuất sắc trên tay cũng là lúc cô tân cử nhân nếm trải cảm giác thế nào là bước ra cuộc sống và thực sự đi xin việc. Mai Anh đã lần lượt kinh qua các vị trí như Business Analyst, Operation, Project Manager… Tới thời điểm hiện tại, cô đã chuyển hướng sang lĩnh vực blockchain với tâm thế.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="cuu-sinh-vien6.jpg" alt="Profile 1">
+                        <h6>THÁI NGỌC DIỄM PHƯƠNG<br> <div class="nganh_hoc">Ngành học: kỹ thuật phần mềm</div></h6>
+                        <p>Học bổng của ĐH Stanford mở ra cho Diễm Phương cơ hội bước chân vào thung lũng công nghệ Silicon và các tập đoàn quốc tế. Cô nhận được lời mời làm việc từ Google, Facebook và Adobe. Trước ba lời mời làm việc hấp dẫn từ các “ông lớn”, Phương đã chọn tập đoàn Google vì cô nhận thấy nơi đây sẽ cho cô nhiều cơ hội học hỏi hơn.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+                
+    <script>
+        let currentIndex = 0;
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length / 3; // 5 trang, mỗi trang 3 slide
+
+function setSliderPosition() {
+    slider.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function touchStart(index) {
+    return function(event) {
+        currentIndex = index;
+        startPos = getPositionX(event);
+        isDragging = true;
+        slider.style.transition = 'none';
+    }
+}
+
+function touchMove(event) {
+    if (isDragging) {
+        const currentPosition = getPositionX(event);
+        currentTranslate = prevTranslate + currentPosition - startPos;
+        setSliderPosition();
+    }
+}
+
+function touchEnd() {
+    isDragging = false;
+    const movedBy = currentTranslate - prevTranslate;
+
+    if (movedBy < -100 && currentIndex < totalSlides - 1) {
+        currentIndex += 1;
+    }
+    if (movedBy > 100 && currentIndex > 0) {
+        currentIndex -= 1;
+    }
+    
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    }
+
+    setPositionByIndex();
+}
+
+function getPositionX(event) {
+    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+}
+
+function setPositionByIndex() {
+    currentTranslate = currentIndex * -window.innerWidth;
+    prevTranslate = currentTranslate;
+    setSliderPosition();
+    slider.style.transition = 'transform 0.5s ease';
+}
+
+// Mouse events
+slider.addEventListener('mousedown', touchStart(currentIndex));
+slider.addEventListener('mouseup', touchEnd);
+slider.addEventListener('mouseleave', () => {
+    if (isDragging) touchEnd();
+});
+slider.addEventListener('mousemove', touchMove);
+
+// Touch events
+slider.addEventListener('touchstart', touchStart(currentIndex));
+slider.addEventListener('touchend', touchEnd);
+slider.addEventListener('touchmove', touchMove);
+
+    </script>
+
+<div class="img_6">
+    <img src="banner5.png" alt="Mô tả ảnh"  width="1905px" height="">
+</div>
+
+<div class="tuyen_sinh">
+<h8>Đăng Ký Tuyển Sinh</h8>
+</div>
+
+<div class="dang_ky">
+    <div class="registration-form">
+        
+        <div class="form-group">
+            <label for="fullname">Họ và Tên</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Số Điện Thoại</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Địa Chỉ</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="school">Trường</label>
+            <input type="text" id="school" name="school" required>
+        </div>
+        <div class="form-group">
+            <label for="major">Ngành Muốn Theo</label>
+            <select id="major" name="major" required>
+                <option value="" disabled selected>Chọn Ngành</option>
+                <option value="IT">Công Nghệ Thông Tin</option>
+                <option value="business">Quản Trị Kinh Doanh</option>
+                <option value="design">Thiết Kế Đồ Họa</option>
+                <option value="engineering">Kỹ Thuật</option>
+                <option value="education">Giáo Dục</option>
+            </select>
+        </div>
+        <button class="submit-btn">Đăng Ký</button>
+    </div>
+</div>
+
+<div class="img_7">
+    <img src="truong3.png" alt="Mô tả ảnh"  width="1910px" height="">
+</div>
+
+  </div>
+</div>
+  </div>
+
+  <div class="trang_cuoi">
+    <footer>
+        <div class="section">
+            <p>© Bản quyền thuộc về Đại học FPT.</p>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fphocaohcmunderground.ptcdhcm&width=450&layout&action&size&share=true&height=35&appId" frameborder="0" style="height: 200px;"></iframe>
+        </div>
+        <div class="section">
+            <p>TRƯỜNG ĐẠI HỌC FPT <br> Lô E2a-7, Đường D1, Khu Công nghệ cao, P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM. <br> (028) 7300 5588 <br> <a href="mailto:daihoc.hcm@fpt.edu.vn">daihoc.hcm@fpt.edu.vn</a></p>
+        </div>
+        <div class="section">
+            <p>NGÀNH ĐÀO TẠO <br> Kinh doanh quốc tế | Digital Marketing | Tài chính | Kỹ thuật phần mềm | An toàn thông tin | Trí tuệ nhân tạo | Truyền thông đa phương tiện | Thiết kế Mỹ thuật số | Hệ thống thông tin | Quản trị khách sạn | Quản trị dịch vụ du lịch & lữ hành | Ngôn ngữ Anh | Song ngữ Trung - Anh | Song ngữ Nhật - Anh | Song ngữ Hàn - Anh</p>
+        </div>
+        <div class="section">
+            <p class="social-links">KẾT NỐI VỚI CHÚNG TÔI: <br>
+                <a href="link_youtube">YT</a> | 
+                <a href="link_facebook">FB</a> | 
+                <a href="link_zalo">ZL</a> | 
+                <a href="link_instagram">IG</a>
+
+            </p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4557721705887!2d106.62469817769927!3d10.852897461712738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529466247deb7%3A0x837f6cf22372ab7e!2zUGjhu5UgVGjDtG5nIENhbyDEkOG6s25nIEZQVCBQb2x5dGVjaG5pYyBUUC5IQ00!5e0!3m2!1svi!2s!4v1718630097895!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eNMwlGB_ISU?si=kXj-5zJGsLc-p6lY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </footer>
+</div>
+
+
+<div class="content1">
+    <!-- Your HTML content here -->
+</div>
+
+<!-- JavaScript code to add "img/" prefix to image src -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all img elements
+        var images = document.querySelectorAll('img');
+        
+        // Loop through each img element
+        images.forEach(function(image) {
+            // Get the current src attribute
+            var src = image.getAttribute('src');
+            
+            // Check if src starts with "img/" already
+            if (!src.startsWith('img/')) {
+                // Prepend "img/" to the src attribute
+                image.setAttribute('src', 'img/' + src);
+            }
+        });
+    });
+</script>
+<script src="https://uhchat.net/code.php?f=a0d484"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+/* Định dạng cho menu chính */
+.menu {
+    background-color: black; /* Màu nền đen */
+    width: 100%; /* Chiều rộng nền */
+    height: 50px; /* Chiều cao nền */
+}
+
+/* Định dạng cho hình ảnh */
+.img {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 80px; /* Khoảng cách từ trên xuống */
+    left: 40px; /* Khoảng cách từ trái sang */
+}
+
+/* Định dạng cho các mục trong menu dọc */
+.vmenu > ul > li {
+    display: inline-block; /* Hiển thị mỗi mục trên cùng một hàng */
+    font-weight: 700;
+}
+
+/* Định dạng cho nút đăng nhập */
+.đăng_nhập {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 8px; /* Khoảng cách từ trên xuống */
+    right: 8px; /* Khoảng cách từ phải sang */
+    background-color: orange; /* Màu nền cam */
+    width: 200px; /* Chiều rộng nền */
+    height: 50px; /* Chiều cao nền */
+}
+
+/* Định dạng cho các mục trong danh sách nút đăng nhập */
+.đăng_nhập ul li {
+    font-family: Arial, Helvetica, sans-serif; /* Font chữ Arial hoặc Helvetica */
+    font-variant: small-caps; /* Hiển thị văn bản dưới dạng chữ thường viết hoa */
+    font-weight: bold; /* Làm cho văn bản đậm */
+    display: inline; /* Hiển thị các mục danh sách theo hàng ngang */
+}
+
+/* Định dạng cho liên kết bên trong các mục danh sách của nút đăng nhập */
+.đăng_nhập ul li a {
+    color: white; /* Màu chữ trắng */
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    position: absolute; /* Định vị tuyệt đối */
+    left: 20px; /* Khoảng cách từ trái sang */
+}
+
+/* Định dạng khi người dùng di chuột qua liên kết trong nút đăng nhập */
+.đăng_nhập ul li a:hover {
+    text-decoration: underline; /* Thêm gạch chân cho liên kết khi di chuột qua */
+}
+
+/* Định dạng cho container của thanh tìm kiếm */
+.search-container {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 8px; /* Khoảng cách từ trên xuống */
+    right: 200px; /* Khoảng cách từ phải sang */
+}
+
+/* Định dạng cho ô nhập liệu của thanh tìm kiếm */
+.search-input {
+    width: 300px; /* Chiều rộng của ô nhập liệu */
+    height: 28px; /* Chiều cao của ô nhập liệu */
+    padding: 10px 40px 10px 10px; /* Đặt khoảng cách bên trong ô nhập liệu */
+    border: 1px solid #333; /* Màu viền của ô nhập liệu */
+    background-color: black; /* Màu nền đen của ô nhập liệu */
+    color: white; /* Màu chữ trắng */
+    position: relative; /* Định vị tương đối để chứa nút tìm kiếm bên trong */
+}
+
+/* Định dạng cho placeholder của ô nhập liệu */
+.search-input::placeholder {
+    color: #bbb; /* Màu chữ của placeholder */
+}
+
+/* Định dạng cho nút tìm kiếm */
+.search-button {
+    position: absolute; /* Định vị tuyệt đối */
+    right: 10px; /* Khoảng cách từ phải sang */
+    top: 50%; /* Đặt nút tìm kiếm ở giữa theo chiều dọc của ô nhập liệu */
+    transform: translateY(-50%); /* Điều chỉnh vị trí của nút tìm kiếm để căn giữa theo chiều dọc */
+    border: none; /* Bỏ viền của nút tìm kiếm */
+    background-color: transparent; /* Đặt nền trong suốt cho nút tìm kiếm */
+    color: white; /* Màu chữ trắng cho nút tìm kiếm */
+    cursor: pointer; /* Đặt con trỏ chuột thành hình bàn tay khi hover qua nút tìm kiếm */
+}
+
+/* Định dạng khi di chuột qua nút tìm kiếm */
+.search-button:hover {
+    color: #bbb; /* Đổi màu chữ thành xám nhạt khi hover qua nút tìm kiếm */
+}
+
+/* Định dạng cho menu dọc */
+.vmenu {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 80px; /* Khoảng cách từ trên xuống */
+    right: 30px; /* Khoảng cách từ phải sang */
+}
+
+/* Định dạng cho danh sách trong menu dọc */
+.vmenu > ul {
+    padding: 0; /* Loại bỏ padding */
+    margin: 0; /* Loại bỏ margin */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    border-radius: 3px; /* Bo tròn góc của menu */
+    text-align: center; /* Căn giữa nội dung của menu */
+}
+
+/* Định dạng cho mỗi mục trong danh sách menu */
+.vmenu > ul > li {
+    display: inline-block; /* Hiển thị mỗi mục trên cùng một hàng */
+}
+
+/* Định dạng cho liên kết trong menu dọc */
+.vmenu > ul > li > a {
+    display: block; /* Biến liên kết thành phần block để có thể đặt chiều rộng và chiều cao */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-variant: small-caps; /* Chuyển đổi văn bản thành chữ in hoa nhỏ */
+    font-family: Arial, Helvetica, sans-serif; /* Font chữ Arial hoặc Helvetica */
+    font-size: larger; /* Đặt kích thước chữ */
+    color: white; /* Màu chữ */
+    padding: 0 20px; /* Khoảng cách bên trong liên kết */
+    line-height: 40px; /* Chiều cao dòng */
+    font-size: 25px; /* Kích thước chữ */
+}
+
+/* Định dạng liên kết khi hover trong menu dọc */
+.vmenu > ul > li > a:hover {
+    color: orange; /* Đổi màu chữ thành màu cam khi hover */
+}
+
+/* Định dạng cho menu ngang */
+.hmenu {
+    background-color: rgb(255, 153, 0); /* Màu đen với độ mờ 0.5 */
+    width: 100%; /* Chiều rộng 100% của trang */
+    height: 70px; /* Chiều cao của menu */
+    position: fixed; /* Cố định vị trí của menu */
+    top: 0; /* Đặt menu ở đầu trang */
+    left: 0; /* Đặt menu ở bên trái trang */
+    z-index: 1000; /* Đảm bảo menu luôn hiển thị trên các phần tử khác */
+    display: none; /* Ẩn menu mặc định */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: right; /* Căn giữa theo chiều ngang */
+    backdrop-filter: blur(10px); /* Áp dụng hiệu ứng mờ */
+}
+
+/* Định dạng cho danh sách trong menu ngang */
+.hmenu ul {
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    margin: 0; /* Loại bỏ margin */
+    padding: 0; /* Loại bỏ padding */
+    display: flex; /* Hiển thị các mục theo hàng ngang */
+}
+
+/* Định dạng cho các mục trong danh sách menu ngang */
+.hmenu ul li {
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
+}
+
+/* Định dạng cho các liên kết trong menu ngang */
+.hmenu ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: white; /* Màu chữ trắng */
+    font-size: 23.5px; /* Kích thước chữ */
+    font-family: Arial, Helvetica, sans-serif; /* Font chữ Arial hoặc Helvetica */
+    padding-right: 30px; /* Thêm padding bên phải */
+    font-weight: 700;
+}
+
+/* Định dạng khi di chuột qua các liên kết trong menu ngang */
+.hmenu ul li a:hover {
+    color: rgb(255, 217, 0); /* Đổi màu nền khi hover */
+}
+
+/* Định dạng cho nút đăng ký */
+.btn-dang-ky {
+    background-color: #004080; /* Màu xanh hơi tối */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    border: none; /* Không viền */
+    border-radius: 8px; /* Bo tròn góc */
+    font-size: 40px; /* Tăng kích thước chữ */
+    cursor: pointer; /* Hình bàn tay khi hover */
+    position: absolute; /* Định vị tuyệt đối */
+    bottom: 110px; /* Khoảng cách từ dưới lên */
+    left: 450px; /* Khoảng cách từ trái sang */
+}
+
+/* Định dạng khi di chuột qua nút đăng ký */
+.btn-dang-ky:hover {
+    background-color: #003060; /* Màu tối hơn khi hover */
+}
+
+/* Định dạng cho tiêu đề */
+h1 {
+    position: absolute; /* Định vị tuyệt đối */
+    top: 1120px;  /*chỉnh vị trí trên*/
+    left: 200px;  /*chỉnh vị trí phải*/
+    color: orange;
+}

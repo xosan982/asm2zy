@@ -1,0 +1,66 @@
+/* CSS cho các ô hình vuông */
+.box {
+    width: 390px; /* Độ rộng của ô */
+    height: 400px; /* Chiều cao của ô */
+    background-color: #fff; /* Màu nền của ô */
+    border: 2px solid orange; /* Viền của ô */
+    display: inline-block; /* Hiển thị ô như một khối inline */
+    margin: 10px; /* Khoảng cách giữa các ô */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+    position: absolute; /* Định vị tuyệt đối để xác định vị trí của ô */
+    border-radius: 10px;
+}
+
+/* Hiệu ứng khi di chuột vào ô */
+.box:hover {
+    background-color: orange; /* Màu nền thay đổi khi hover */
+    transform: scale(1.1); /* Phóng to ô lên khi hover */
+}
+
+/* Hiệu ứng khi di chuột vào, thay đổi màu chữ */
+.box:hover p {
+    color: #fff; /* Màu chữ thay đổi khi hover */
+}
+
+/* Thiết lập vị trí cho từng ô */
+#box1 { top: 2430px; left: 10px; } /* Vị trí của ô 1 */
+#box2 { top: 2430px; left: 420px; } /* Vị trí của ô 2 */
+#box3 { top: 2430px; left: 830px; } /* Vị trí của ô 3 */
+#box4 { top: 2430px; left: 1240px; } /* Vị trí của ô 4 */
+
+/* Nội dung trong ô */
+.box p {
+    color: #000; /* Màu chữ */
+    text-align: left; /* Căn lề trái */
+    left: 60px; /* Đặt vị trí của nội dung trong ô */
+    font-weight: bold; /* Chữ in đậm */
+    font-size: 20px; /* Kích thước chữ */
+    margin-top: 40px; /* Khoảng cách từ đỉnh ô đến văn bản */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+    position: absolute; /* Định vị tuyệt đối */
+    width: 90%; /* Chiều rộng của nội dung */
+    top: 30%; /* Đặt vị trí dọc của nội dung */
+    transform: translateY(-50%); /* Canh giữa nội dung theo chiều dọc */
+    opacity: 1; /* Độ mờ ban đầu */
+}
+
+/* Font cho các ô */
+#box1 a p, #box2 a p, #box3 a p, #box4 a p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font của văn bản */
+}
+
+/* Các phần tử khác */
+strong {
+    font-size: 30px; /* Kích thước chữ in đậm */
+    font-family: Arial, Helvetica, sans-serif; /* Font chữ */
+}
+
+h2, h3 {
+    position: absolute; /* Định vị tuyệt đối */
+    font-family: Arial, Helvetica, sans-serif; /* Font chữ */
+}
+
+h2 { top: 2200px; left: 500px; font-size: 40px; } /* Vị trí và kích thước cho tiêu đề 2 */
+h3 { top: 2900px; left: 400px; font-size: 40px; } /* Vị trí và kích thước cho tiêu đề 3 */
+
+.đại_học { color: orange; font-size: 40px; } /* Màu và kích thước chữ cho phần văn bản */
